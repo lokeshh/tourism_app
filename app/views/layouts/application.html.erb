@@ -10,5 +10,20 @@
 
 <%= yield %>
 
+<p>
+  Navigation
+</p>
+<ul>
+  <li>
+    <%= link_to "Home", root_path %>
+  </li>
+  <li>
+    <%= link_to "Admin login", admin_login_path %>
+  </li>
+  <li>
+    <%= link_to "Customer login", customer_login_path %>
+  </li>
+</ul>  
+
 </body>
 </html>

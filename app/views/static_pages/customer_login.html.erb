@@ -1,2 +1,17 @@
-<h1>StaticPages#customer_login</h1>
-<p>Find me in app/views/static_pages/customer_login.html.erb</p>
+<h1>Customer login</h1>
+
+
+<%= label :email, :email %>
+<%= email_field :email, :email %>
+
+<%= label :password, :password %>
+<%= password_field :password, :password %>
+
+
+
+
+<p>Customer will login through here and go to 
+<%= link_to "Customer interact", customer_interact_path %>
+where he can interact with our app and choose places
+and time to visit.</p>
+

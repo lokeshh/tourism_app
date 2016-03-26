@@ -1,2 +1,15 @@
-<h1>StaticPages#admin_login</h1>
-<p>Find me in app/views/static_pages/admin_login.html.erb</p>
+<h1>Admin login</h1>
+
+
+<%= label :email, :email %>
+<%= email_field :email, :email %>
+
+<%= label :password, :password %>
+<%= password_field :password, :password %>
+
+
+
+
+<p>Admin will login through here and go to 
+<%= link_to "Admin control", admin_control_path %></p>
+

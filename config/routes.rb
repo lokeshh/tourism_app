@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
+  root 'static_pages#home'
 
-  get 'static_pages/admin_login'
+  get 'static_pages/admin_login', as: :admin_login
 
-  get 'static_pages/customer_login'
+  get 'static_pages/customer_login', as: :customer_login
 
-  get 'static_pages/admin_control'
+  get 'static_pages/admin_control', as: :admin_control
 
-  get 'static_pages/customer_request'
+  get 'static_pages/customer_request', as: :customer_interact
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
